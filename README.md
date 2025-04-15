@@ -45,6 +45,48 @@ The **`orders`** app contains the **Order Management API**, which includes:
 ## Setup Instructions
 
 1. **Clone the repository**:
-   ```bash
+   
    git clone https://github.com/<your-username>/django-rest-assessment.git
    cd django-rest-assessment
+   Set up the virtual environment:
+
+
+python -m venv venv
+source venv/bin/activate   # On Windows use `venv\Scripts\activate`
+Install dependencies:
+
+
+pip install -r requirements.txt
+Apply migrations:
+
+
+python manage.py migrate
+Run the development server:
+
+
+python manage.py runserver
+Access the Swagger UI: Visit http://127.0.0.1:8000/swagger/ to view and test the API documentation.
+
+API Documentation
+Swagger UI is available at /swagger/.
+
+You can test all API endpoints directly from the Swagger interface.
+
+Technologies Used
+Django 3.x
+
+Django REST Framework
+
+SimpleJWT for JWT Authentication
+
+DRF-YASG for Swagger API documentation
+
+SQLITE (or SQLite depending on your setup)
+
+Conclusion
+This project demonstrates the use of Django REST Framework to implement a CRUD API, rate limiting, JWT authentication, and API documentation. It also optimizes database queries to avoid common performance issues such as N+1 queries.
+
+Feel free to reach out for any questions!
+
+Best regards,
+Abhay Pratap Singh
